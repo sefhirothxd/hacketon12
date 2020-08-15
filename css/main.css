@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
+
+/*Contenedor del modal*/
+
+.container-modal {
+    /*Para esconder el modal*/
+    display: none;
+    /*mantenerlo estatico*/
+    position: fixed;
+    /*para ponerlo ensima de todo el contenido html */
+    z-index: 1;
+    /* localizacion del modal*/
+    padding-top: 100px;
+    left: 0;
+    right: 0;
+    /*para que abarque toda la pantalla*/
+    width: 100%;
+    height: 100%;
+    /*para el scroll quede habilitado cuando se le necesite*/
+    overflow: auto;
+    /*para darle opacidad y olor*/
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+
+/*box modal con el contenido*/
+
+.modal-content {
+    position: relative;
+    /*color de fondo */
+    background-color: white;
+    /*centrado del box modal*/
+    margin: auto;
+    /*color del borde */
+    border: 1px solid #888;
+    /*relleno del modal*/
+    padding: 20px;
+    /*ancho de la caja modal*/
+    width: 30%;
+    /*sombreado de la caja modal*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*animacion nombre*/
+    animation-name: modal-top;
+    /*duracion de la animacion*/
+    animation-duration: 1s;
+}
+
+@keyframes modal-top {
+    from {
+        /*punto de partida*/
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        /*posicion final de la animacion*/
+        top: 0;
+        opacity: 1
+    }
+}
+
+.modal-header {
+    margin-bottom: 20px;
+}
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close {
+    color: #888;
+    float: right;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.btn-cancelar {
+    background-color: grey;
+    color: white;
+    outline: none;
+    margin-right: 10px;
+}
+
+.btn-aceptar {
+    background-color: #007bff;
+    color: white;
+    outline: none;
+}
+
+.btn-aceptar:active {
+    border-color: #007bff;
+}
+
+.btn-cancelar:active {
+    border-color: #6c757d;
+}
