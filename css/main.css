@@ -11,8 +11,26 @@ body {
     font-size: 1.4rem;
 }
 
+main {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.container-all {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    height: 100vh;
+}
+
 
 /*Contenedor del modal*/
+
+.container-principal__modal {
+    margin-bottom: 20px;
+}
 
 .container-modal {
     /*Para esconder el modal*/
@@ -20,7 +38,7 @@ body {
     /*mantenerlo estatico*/
     position: fixed;
     /*para ponerlo ensima de todo el contenido html */
-    z-index: 1;
+    /* z-index: 1; */
     /* localizacion del modal*/
     padding-top: 100px;
     left: 0;
@@ -28,8 +46,6 @@ body {
     /*para que abarque toda la pantalla*/
     width: 100%;
     height: 100%;
-    /*para el scroll quede habilitado cuando se le necesite*/
-    overflow: auto;
     /*para darle opacidad y olor*/
     background-color: rgb(0, 0, 0, 0.4);
 }
@@ -46,7 +62,7 @@ body {
     /*color del borde */
     border: 1px solid #888;
     /*relleno del modal*/
-    padding: 20px;
+    padding: 10px;
     /*ancho de la caja modal*/
     width: 30%;
     /*sombreado de la caja modal*/
@@ -61,7 +77,7 @@ body {
     from {
         /*punto de partida*/
         top: -300px;
-        opacity: 0
+        opacity: 1
     }
     to {
         /*posicion final de la animacion*/
@@ -78,6 +94,10 @@ body {
     margin-bottom: 20px;
 }
 
+.modal-body__p {
+    line-height: 20px;
+}
+
 .modal-footer {
     display: flex;
     justify-content: flex-end;
@@ -86,8 +106,11 @@ body {
 .close {
     color: #888;
     float: right;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: bold;
+    border: none;
+    background: transparent;
+    outline: none;
 }
 
 .close:hover,
@@ -122,3 +145,82 @@ body {
 .btn-cancelar:active {
     border-color: #6c757d;
 }
+
+.img-modal {}
+
+
+/*Acordion*/
+
+.accordion {
+    background-color: #eee;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    border: none;
+}
+
+.text-detail {
+    display: none;
+    padding: 20px 20px;
+    color: cornsilk;
+}
+
+
+/*------------------*/
+
+
+/*Dropdown*/
+
+.container-all__dropdown {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-principal__dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.btn-dropdown {
+    padding: 10px 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.btn-dropdown:focus,
+.btn-dropdown:hover {
+    opacity: 0.4;
+    outline: none;
+}
+
+.content-dropdown {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.content-dropdown a {
+    display: block;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.content-dropdown a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* border: 1px solid black; */
+}
+
+.show {
+    display: block;
+}
+
+
+/*-------------------------------*/

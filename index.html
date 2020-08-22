@@ -11,32 +11,76 @@
 </head>
 
 <body>
-    <header>
-
-    </header>
-    <main>
-        <div class="container-p">
-            <button id="btn-modal" class="btn">modal</button>
-            <div class="container-modal" id="mymodal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="close" id="close">X</span>
-                        <h3>Title</h3>
-                    </div>
-                    <div class="modal-body">
-                        <p class="modal-body__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-cancelar">Cerrar</button>
-                        <button class="btn btn-aceptar">Guardar</button>
+    <section class="container-all">
+        <header class="header">
+            <figure class="container-img">
+                <img class="img-header" src="" alt="">
+            </figure>
+            <section class="container-all__dropdown">
+                <div id="mydrop" class="container-principal__dropdown">
+                    <button class="btn-dropdown" id="btn-drop">Categorias</button>
+                    <div class="content-dropdown">
+                        <a href="">Items 1</a>
+                        <a href="">Items 2</a>
+                        <a href="">Items 3</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </main>
-    <script src="js/main.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/main.js"></script>
+                <div id="mydrop2" class="container-principal__dropdown">
+                    <button class="btn-dropdown" id="btn-drop2">peliculas</button>
+                    <div class="content-dropdown">
+                        <a href="">Items 4</a>
+                        <a href="">Items 5</a>
+                        <a href="">Items 6</a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="container-principal__modal">
+                <div class="container-modal" id="mymodal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" id="close">X</button>
+                            <h3>Title</h3>
+                        </div>
+                        <div class="modal-body" id="modal-body">
+                            <p class="modal-body__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="modal-footer" id="modal-f">
+                            <button class="btn btn-cancelar" id="btn-c">Cancelar</button>
+                            <button class="btn btn-aceptar" id="btn-a">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+                <figure class="container-img">
+                    <img class="img-modal" src="" alt="">
+                    <button id="btn-modal" class="btn">modal</button>
+                </figure>
+            </section>
+            <section class="container-principal__acordeon">
+                <div class="container-text" id="txt-uno">
+                    <button class="accordion" id="btnTxt-uno">Texto 1</button>
+                    <div class="text-detail">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="container-text" id="txt-dos">
+                    <button class="accordion" id="btnTxt-dos">Texto 2</button>
+                    <div class="text-detail">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="container-text" id="txt-tres">
+                    <button class="accordion" id="btnTxt-tres">Texto 3</button>
+                    <div class="text-detail">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </section>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
