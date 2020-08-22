@@ -38,11 +38,11 @@ main {
     /*mantenerlo estatico*/
     position: fixed;
     /*para ponerlo ensima de todo el contenido html */
-    /* z-index: 1; */
+    z-index: 1;
     /* localizacion del modal*/
     padding-top: 100px;
+    top: 0;
     left: 0;
-    right: 0;
     /*para que abarque toda la pantalla*/
     width: 100%;
     height: 100%;
